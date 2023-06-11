@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { lazy, Suspense } from "react";
+import ParticlesBackground from "./components/ParticlesBackground";
+
+const LazyHomePage = lazy(() => import("./pages/HomePage"));
+const LazyResumePage = lazy(() => import("./pages/ResumePage"));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className="app">
+        <div className="ts-particles">
+          <ParticlesBackground />
+        </div>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <Suspense fallback={<div>Loading</div>}>
+                <LazyHomePage />
+              </Suspense>
+            }
+          ></Route>
+          <Route
+            path="/resume"
+            element={
+              <Suspense fallback={<div>Loading</div>}>
+                <LazyResumePage />
+              </Suspense>
+            }
+          ></Route>
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

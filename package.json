@@ -6,9 +6,15 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "dom": "^0.0.3",
+    "fs": "^0.0.1-security",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react-alice-carousel": "^2.7.1",
+    "react-router-dom": "^6.12.1",
     "react-scripts": "5.0.1",
+    "react-svg": "^16.1.16",
+    "react-tsparticles": "^2.10.1",
+    "tsparticles": "^2.10.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
