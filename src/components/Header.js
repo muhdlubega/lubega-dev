@@ -13,9 +13,10 @@ const Header = () => {
             Lubega.dev
           </h1>
           <div className="header-nav">
-            <div className="header-title">Home</div>
-            <div className="header-title">Resume</div>
-            <div className="header-title">Skills</div>
+            <div className="header-title" onClick={() => navigate("/about")}>About</div>
+            <div className="header-title" onClick={() => navigate("/projects")}>Project</div>
+            <div className="header-title" onClick={() => navigate("/skills")}>Skills</div>
+            <div className="header-title" onClick={() => navigate("/contact")}>Contact</div>
           </div>
         </nav>
       </div>

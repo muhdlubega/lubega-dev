@@ -4,7 +4,10 @@ import { lazy, Suspense } from "react";
 import ParticlesBackground from "./components/ParticlesBackground";
 
 const LazyHomePage = lazy(() => import("./pages/HomePage"));
-const LazyResumePage = lazy(() => import("./pages/ResumePage"));
+const LazyAboutPage = lazy(() => import("./pages/AboutPage"));
+const LazyProjectsPage = lazy(() => import("./pages/ProjectsPage"));
+const LazySkillsPage = lazy(() => import("./pages/SkillsPage"));
+const LazyContactPage = lazy(() => import("./pages/ContactPage"));
 
 function App() {
   return (
@@ -23,10 +26,34 @@ function App() {
             }
           ></Route>
           <Route
-            path="/resume"
+            path="/about"
             element={
               <Suspense fallback={<div>Loading</div>}>
-                <LazyResumePage />
+                <LazyAboutPage />
+              </Suspense>
+            }
+          ></Route>
+          <Route
+            path="/projects"
+            element={
+              <Suspense fallback={<div>Loading</div>}>
+                <LazyProjectsPage />
+              </Suspense>
+            }
+          ></Route>
+          <Route
+            path="/skills"
+            element={
+              <Suspense fallback={<div>Loading</div>}>
+                <LazySkillsPage />
+              </Suspense>
+            }
+          ></Route>
+          <Route
+            path="/contact"
+            element={
+              <Suspense fallback={<div>Loading</div>}>
+                <LazyContactPage />
               </Suspense>
             }
           ></Route>

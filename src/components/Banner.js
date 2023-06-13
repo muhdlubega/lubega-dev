@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { motion, useAnimation } from "framer-motion";
 import lubega from '../assets/lubega.jpg';
 import email from '../assets/email-logo.svg';
 import github from '../assets/github-logo.svg';
@@ -7,29 +8,71 @@ import linkedin from '../assets/linkedin-logo.svg';
 import whatsapp from '../assets/whatsapp-logo.svg';
 
 const Banner = () => {
+  const animationControls = useAnimation();
+
+  useEffect(() => {
+    animationControls.start({ y: 0, opacity: 1, transition: { duration: 2 } });
+  }, [animationControls]);
 
   return (
     <div className="banner-main">
-      <div className="banner-text">
+      <motion.div
+        className="banner-text"
+        initial={{ y: -50, opacity: 0 }}
+        animate={animationControls}
+      >
         <div className="banner-container">
-          <h2 className="banner-title">Front-End React Developer</h2>
-          <p className="banner-tagline">
-            Hi, I am Lubega! A passionate Front-end React Developer based in
-            Kuala Lumpur, Malaysia. Get to know me here
-          </p>
+          <motion.h2 className="banner-title">Front-End React Developer</motion.h2>
+          <motion.p className="banner-tagline">
+            Hi, I am Lubega! A passionate Front-end React Developer based in Kuala Lumpur, Malaysia. Get to know me here
+          </motion.p>
           <div className="banner-logos">
-            <button className="banner-logo-btn" onClick={() => window.location.href=("https://github.com/muhdlubega")}><img className="banner-logo" src={github}/></button>
-            <button className="banner-logo-btn" onClick={() => window.location.href=("https://www.linkedin.com/in/muhammad-lubega/")}><img className="banner-logo" src={linkedin}/></button>
-            <button className="banner-logo-btn" onClick={() => window.location.href=("https://www.instagram.com/muhdlbega/")}><img className="banner-logo" src={instagram}/></button>
-            <button className="banner-logo-btn" onClick={() => window.location.href=("https://wa.me/+60182401703")}><img className="banner-logo" src={whatsapp}/></button>
-            <button className="banner-logo-btn" onClick={() => window.location.href=("mailto:muhdlubegasiraje@gmail.com")}><img className="banner-logo" src={email}/></button>
+            <motion.button
+              className="banner-logo-btn"
+              whileHover={{ scale: 1.1 }}
+              onClick={() => window.location.href=("https://github.com/muhdlubega")}
+            >
+              <motion.img className="banner-logo" src={github} alt="GitHub" />
+            </motion.button>
+            <motion.button
+              className="banner-logo-btn"
+              whileHover={{ scale: 1.1 }}
+              onClick={() => window.location.href=("https://www.linkedin.com/in/muhammad-lubega/")}
+            >
+              <motion.img className="banner-logo" src={linkedin} alt="LinkedIn" />
+            </motion.button>
+            <motion.button
+              className="banner-logo-btn"
+              whileHover={{ scale: 1.1 }}
+              onClick={() => window.location.href=("https://www.instagram.com/muhdlbega/")}
+            >
+              <motion.img className="banner-logo" src={instagram} alt="Instagram" />
+            </motion.button>
+            <motion.button
+              className="banner-logo-btn"
+              whileHover={{ scale: 1.1 }}
+              onClick={() => window.location.href=("https://wa.me/+60182401703")}
+            >
+              <motion.img className="banner-logo" src={whatsapp} alt="WhatsApp" />
+            </motion.button>
+            <motion.button
+              className="banner-logo-btn"
+              whileHover={{ scale: 1.1 }}
+              onClick={() => window.location.href=("mailto:muhdlubegasiraje@gmail.com")}
+            >
+              <motion.img className="banner-logo" src={email} alt="Email" />
+            </motion.button>
           </div>
         </div>
-      </div>
-      <div className="banner-img-container">
-      <div className="banner-image-box"></div>
-      <img className="banner-image" src={lubega}></img>
-      </div>
+      </motion.div>
+      <motion.div
+        className="banner-img-container"
+        initial={{ y: -50, opacity: 0 }}
+        animate={animationControls}
+      >
+        <div className="banner-image-box"></div>
+        <motion.img className="banner-image" src={lubega} alt="Lubega" />
+      </motion.div>
     </div>
   );
 };

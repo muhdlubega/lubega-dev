@@ -18,6 +18,9 @@ const ParticlesBackground = () => {
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
+                background: {
+                    color: "#000000",
+                },
                 fpsLimit: 120,
                 interactivity: {
                     events: {
@@ -36,8 +39,8 @@ const ParticlesBackground = () => {
                             quantity: 4,
                         },
                         repulse: {
-                            distance: 200,
-                            duration: 0.4,
+                            distance: 100,
+                            duration: 10,
                         },
                     },
                 },
