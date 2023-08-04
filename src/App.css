@@ -246,6 +246,33 @@
   margin-top: 25vw;
 }
 
+.project-drc{
+  margin: 5vw 0;
+  height: 30vw;
+  /* background-color: #004D81; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-cc1{
+  position: absolute;
+  height: 22vw;
+  right: 4vw;
+  top: 39vw
+}
+
+.project-cc1:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.project-cc2{
+  height: 20vw;
+  opacity: 60%;
+  margin-bottom: 5vw;
+}
+
 .project-hackathon{
   margin: 5vw 0;
   height: 30vw;
@@ -258,8 +285,8 @@
 .project-vg1{
   position: absolute;
   height: 22vw;
-  right: 4vw;
-  top: 39vw
+  left: 12vw;
+  top: 75vw
 }
 
 .project-vg1:hover{
@@ -271,6 +298,7 @@
   height: 20vw;
   opacity: 60%;
   margin-bottom: 5vw;
+  margin-left: 5vw;
 }
 
 .project-course{
@@ -285,8 +313,8 @@
 .project-ri1{
   position: absolute;
   height: 22vw;
-  left: 8vw;
-  top: 74vw
+  right: 4vw;
+  top: 108vw
 }
 
 .project-ri1:hover{
@@ -312,8 +340,8 @@
 .project-ck1{
   position: absolute;
   height: 22vw;
-  right: 4vw;
-  top: 110vw
+  left: 12vw;
+  top: 145vw
 }
 
 .project-ck1:hover{
@@ -325,6 +353,7 @@
   height: 20vw;
   opacity: 60%;
   margin-bottom: 5vw;
+  margin-left: 5vw;
 }
 
 
