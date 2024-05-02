@@ -1,0 +1,186 @@
+.project-main {
+    color: #ffffff;
+}
+
+.project-headline {
+    margin: 3vw 0;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: 10vw;
+    position: absolute;
+}
+
+.project-container {
+    margin-top: 25vw;
+}
+
+.project-drc {
+    margin: 5vw 0;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-cc1 {
+    position: absolute;
+    height: 22vw;
+    right: 4vw;
+    top: 39vw;
+
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+.project-cc2 {
+    height: 20vw;
+    opacity: 60%;
+    margin-bottom: 5vw;
+}
+
+.project-hackathon {
+    margin: 5vw 0;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-vg1 {
+    position: absolute;
+    height: 22vw;
+    left: 12vw;
+    top: 75vw;
+
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+.project-vg2 {
+    height: 20vw;
+    opacity: 60%;
+    margin-bottom: 5vw;
+    margin-left: 5vw;
+}
+
+.project-course {
+    margin: 5vw 0;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-ri1 {
+    position: absolute;
+    height: 22vw;
+    right: 4vw;
+    top: 108vw;
+
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+.project-ri2 {
+    height: 20vw;
+    opacity: 60%;
+    margin-bottom: 5vw;
+}
+
+.project-selfstudy {
+    margin: 5vw 0;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-ck1 {
+    position: absolute;
+    height: 22vw;
+    left: 12vw;
+    top: 145vw;
+
+    &:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+.project-ck2 {
+    height: 20vw;
+    opacity: 60%;
+    margin-bottom: 5vw;
+    margin-left: 5vw;
+}
+
+.project-div {
+    width: 35vw;
+    text-align: justify;
+    color: white;
+    margin: 2vw;
+}
+
+.project-div2 {
+    width: 35vw;
+    text-align: justify;
+    margin: 10vw;
+}
+
+.project-title {
+    margin: 0 auto;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: 3vw;
+    color: #00D2CB;
+}
+
+.project-content {
+    font-weight: 500;
+    font-family: 'Montserrat';
+    font-size: 1.1vw;
+    opacity: 75%;
+}
+
+.project-btn-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.project-logo {
+    height: 1.5vw;
+    filter: invert(100%);
+    margin-right: 1vw;
+}
+
+.project-logo2 {
+    height: 1.5vw;
+    margin-right: 1vw;
+    filter: invert(100%);
+}
+
+.project-logo-btn {
+    all: unset;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    font-size: 1.1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}

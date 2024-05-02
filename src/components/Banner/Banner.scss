@@ -1,0 +1,90 @@
+.banner-main {
+    position: relative;
+    background-size: cover;
+    height: calc(100vh - 4.5rem);
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @media (max-width : 768px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 2rem;
+        top: 12rem;
+    }
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 35vw;
+}
+
+.banner-container {
+    margin: 0 auto;
+    max-width: 960px;
+    position: relative;
+}
+
+.banner-title {
+    font-weight: bold;
+    margin-bottom: 1vw;
+    font-family: 'Montserrat';
+    font-size: 4vw;
+    color: white;
+    text-shadow: 0.2vw 0.3vw #02948f;
+}
+
+.banner-tagline {
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-size: 1.1vw;
+    text-transform: capitalize;
+}
+
+.banner-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2vw 1vw 0 0;
+}
+
+.banner-logo {
+    height: 2.5vw;
+    filter: invert(100%);
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+}
+
+.banner-logo-btn {
+    all: unset;
+    cursor: pointer;
+}
+
+.banner-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-image {
+    height: 50vh;
+    box-shadow: 1vh 2vh #02948f;
+    z-index: 2;
+}
+
+.banner-image-box {
+    height: 32rem;
+    width: 20rem;
+    position: absolute;
+    translate: -3vh 1vw;
+    border: 0.5rem dotted #02948f;
+}

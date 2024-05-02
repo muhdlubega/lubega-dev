@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import lubega from '../assets/lubega.jpg';
-import email from '../assets/email-logo.svg';
-import github from '../assets/github-logo.svg';
-import instagram from '../assets/instagram-logo.svg';
-import linkedin from '../assets/linkedin-logo.svg';
-import whatsapp from '../assets/whatsapp-logo.svg';
+import lubega from '../../assets/lubega.jpg';
+import email from '../../assets/email-logo.svg';
+import github from '../../assets/github-logo.svg';
+import instagram from '../../assets/instagram-logo.svg';
+import linkedin from '../../assets/linkedin-logo.svg';
+import whatsapp from '../../assets/whatsapp-logo.svg';
+import './Banner.scss';
 
 const Banner: React.FC = () => {
   const animationControls = useAnimation();

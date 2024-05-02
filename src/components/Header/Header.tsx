@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "../App.scss";
+import "./Header.scss";
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
@@ -8,7 +8,6 @@ const Header: React.FC = () => {
   return (
     <header className="header-main">
       <div className="header-container">
-        <nav className="header-nav">
           <h1 className="header-title" onClick={() => navigate("/")}>
             Lubega.dev
           </h1>
@@ -18,7 +17,6 @@ const Header: React.FC = () => {
             <div className="header-title" onClick={() => navigate("/skills")}>Skills</div>
             <div className="header-title" onClick={() => navigate("/contact")}>Contact</div>
           </div>
-        </nav>
       </div>
     </header>
   );

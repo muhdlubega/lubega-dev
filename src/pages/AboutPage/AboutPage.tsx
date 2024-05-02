@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutMe, Carousel, Header, Footer } from '../../components';
+import { AboutMe, Carousel, Header } from '../../components';
 
 const AboutPage: React.FC = () => {
   return (
@@ -7,7 +7,6 @@ const AboutPage: React.FC = () => {
       <Header/>
         <AboutMe/>
         <Carousel/>
-        <Footer/>
     </div>
   )
 }

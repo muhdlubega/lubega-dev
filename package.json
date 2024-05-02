@@ -1,5 +1,6 @@
 {
   "name": "lubega-dev",
+  "homepage": ".",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +11,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.3.0",
     "framer-motion": "^11.1.7",
     "react": "^18.2.0",
     "react-alice-carousel": "^2.9.1",
     "react-dom": "^18.2.0",
+    "react-particles": "^2.12.2",
     "react-router-dom": "^6.23.0",
     "react-tsparticles": "^2.12.2",
     "require-context": "^1.1.0",

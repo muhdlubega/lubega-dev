@@ -1,6 +1,7 @@
 import React from "react";
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
+import './Carousel.scss';
 
 interface Logo {
   src: string;
@@ -13,7 +14,7 @@ const logoPaths: string[] = [
 ];
 
 const logos: Logo[] = logoPaths.map((path: string) => ({
-  src: require(path),
+  src: path,
   alt: path.split("/").pop()?.replace('.svg', ''),
 }));
 

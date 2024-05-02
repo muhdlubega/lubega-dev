@@ -1,15 +1,16 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
-import drc1 from "../assets/projects/cc1.png";
-import drc2 from "../assets/projects/cc2.png";
-import hackathon1 from "../assets/projects/vg1.png";
-import hackathon2 from "../assets/projects/vg2.png";
-import course1 from "../assets/projects/ri1.png";
-import course2 from "../assets/projects/ri2.png";
-import selfstudy1 from "../assets/projects/ck1.png";
-import selfstudy2 from "../assets/projects/ck2.png";
-import github from '../assets/github-logo.svg';
-import website from '../assets/website.svg';
+import drc1 from "../../assets/projects/cc1.png";
+import drc2 from "../../assets/projects/cc2.png";
+import hackathon1 from "../../assets/projects/vg1.png";
+import hackathon2 from "../../assets/projects/vg2.png";
+import course1 from "../../assets/projects/ri1.png";
+import course2 from "../../assets/projects/ri2.png";
+import selfstudy1 from "../../assets/projects/ck1.png";
+import selfstudy2 from "../../assets/projects/ck2.png";
+import github from '../../assets/github-logo.svg';
+import website from '../../assets/website.svg';
+import './Projects.scss';
 
 const Projects: React.FC = () => {
   const animationControls = useAnimation();

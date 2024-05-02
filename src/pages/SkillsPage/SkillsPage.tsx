@@ -1,11 +1,10 @@
 import React from 'react';
-import { Footer, Header } from '../../components';
+import { Header } from '../../components';
 
 const SkillsPage: React.FC = () => {
   return (
     <div>
       <Header/>
-      <Footer/>
     </div>
   )
 }

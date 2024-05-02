@@ -1,0 +1,26 @@
+.header-main {
+    background-color: transparent;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-title {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.2vw;
+    cursor: pointer;
+    padding: 0.5vw 3vw;
+
+    &:hover {
+        color: #00D2CB;
+    }
+}

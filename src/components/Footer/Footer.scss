@@ -1,0 +1,36 @@
+.footer-main {
+    background-color: transparent;
+    bottom: 0;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.2vw;
+    padding: 0.5vw 3vw;
+}
+
+.footer-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0.5vw 3vw;
+}
+
+.footer-logo-btn {
+    all: unset;
+    cursor: pointer;
+}
+
+.footer-logo {
+    height: 2vw;
+    filter: invert(100%);
+    margin-left: 1vw;
+}

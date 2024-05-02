@@ -1,0 +1,42 @@
+.carousel-main{
+    height: 25vw;
+    color: #ffffff;
+    margin-top: 5vw;
+  }
+  
+  .carousel-title{
+    margin: 0 auto;
+    margin-left: 15vw;
+    max-width: 40vw;
+    text-align: justify;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: 3vw;
+    color: #00D2CB;
+  }
+  
+  .carousel-content{
+    margin-left: 15vw;
+    font-weight: 500;
+    font-family: 'Montserrat';
+    font-size: 1.1vw;
+  }
+  
+  .carousel-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-logo{
+    height: 5vw;
+    margin:1vw
+  }
+  
+  .carousel-item{
+    font-weight: 600;
+    font-family: 'Montserrat';
+    font-size: 1vw;
+    color: #00D2CB;
+  }

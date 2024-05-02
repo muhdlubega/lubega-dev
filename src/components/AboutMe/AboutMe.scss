@@ -1,0 +1,59 @@
+.about-page{
+    background-color: #000000;
+  }
+  
+  .about-main {
+    height: 30vw;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url("./assets/about-me.jpg");
+    background-size: cover;
+    filter: grayscale(100%);
+  }
+  
+  
+  .about-img-container{
+    margin-top: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-card{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .about-image{
+    height: 25vw;
+    z-index: 2;
+    margin-left: 5vw
+  }
+  .about-effect{
+    position: absolute;
+    height: 8vw;
+    left: 35vw;
+    top: 42vw;
+  }
+  
+  .about-text{
+    margin: 10vw 0 0 10vw;
+    max-width: 40vw;
+    text-align: justify;
+    color: #ffffff;
+  }
+  
+  .about-title{
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    font-family: 'Montserrat';
+    font-size: 10vw;
+    opacity: 20%;
+    position: absolute;
+  }
+  
+  .about-content{
+    font-weight: 500;
+    font-family: 'Montserrat';
+    font-size: 1.1vw;
+  }

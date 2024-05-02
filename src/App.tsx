@@ -1,7 +1,7 @@
 import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
-import { ParticlesBackground } from "./components";
+import { Footer, ParticlesBackground } from "./components";
 // import { AboutPage, ContactPage, HomePage, ProjectsPage, SkillsPage } from './pages';
 
 const LazyHomePage = lazy(() => import("./pages/HomePage/HomePage"));
@@ -60,6 +60,7 @@ function App() {
           ></Route>
         </Routes>
       </div>
+      <Footer />
     </BrowserRouter>
   );
 }

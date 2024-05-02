@@ -1,22 +1,22 @@
-import { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import React, { useEffect, useState } from "react";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 
-const ParticlesBackground = () => {
-    const particlesInit = useCallback(async engine => {
-        console.log(engine);
-        await loadFull(engine);
+const ParticlesBackground: React.FC = () => {
+    const [ init, setInit ] = useState(false);
+
+    useEffect(() => {
+        initParticlesEngine(async (engine) => {
+            await loadSlim(engine);
+        }).then(() => {
+            setInit(true);
+        });
     }, []);
-
-    const particlesLoaded = useCallback(async container => {
-        console.log(container);
-    }, []);
-
+    
   return(
-    <Particles
+    <React.Fragment>
+    {init && <Particles
             id="tsparticles"
-            init={particlesInit}
-            loaded={particlesLoaded}
             options={{
                 background: {
                     color: "#000000",
@@ -32,7 +32,6 @@ const ParticlesBackground = () => {
                             enable: true,
                             mode: "repulse",
                         },
-                        resize: true,
                     },
                     modes: {
                         push: {
@@ -53,7 +52,7 @@ const ParticlesBackground = () => {
                         distance: 200,
                         enable: true,
                         opacity: 0.8,
-                        width: 0.8,
+                        width: 1,
                     },
                     collisions: {
                         enable: true,
@@ -71,7 +70,6 @@ const ParticlesBackground = () => {
                     number: {
                         density: {
                             enable: true,
-                            area: 1000,
                         },
                         value: 80,
                     },
@@ -87,7 +85,7 @@ const ParticlesBackground = () => {
                 },
                 detectRetina: true,
             }}
-        />
+        />}</React.Fragment>
   );
 };
 
